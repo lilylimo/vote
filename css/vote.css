@@ -1,0 +1,147 @@
+/*涣美-投票样式*/
+.voteMain{background: url(../img/bg.jpg);}
+/**************************   涣美投票   头部   *****************************/
+.vTopBox{position: relative;padding:0 5%;padding-top: 75%;}
+.topBg{width: 100%;position: absolute;top:0px;left: 0px;z-index: 0;}
+
+.acRule{color: #fff;position: absolute;top: 10px;right: 10px;z-index: 1;}
+.acRule:before{content: "";width: 20px;height: 20px;background: url(../img/ruleIcon.png) no-repeat center;background-size:100%;margin-right: 3px;}
+
+.deadline{text-align: center;margin-bottom: 5%;position: relative;z-index: 1;}
+.deadline button{color: #fff;width: 160px;height: 30px;line-height: 30px;background:url(../img/deadlineBg.png) no-repeat center;background-size: 100% 100%;margin: 0 auto;}
+
+.voteTimeing{margin-top: 14px;}
+.voteTimeing span i{color: #611051;background: #f8a6f9;border: 1px solid #a1729c;border-radius: 3px;font-size: 16px; padding:0 8px; min-width: 30px; height: 26px;line-height: 26px;}
+.voteTimeing span b{color: #fff;background: #e292cc;border-radius: 50%;width: 22px;height: 22px;line-height: 22px;margin-left: 2px;margin-right: 4px;position: relative;top: -8px;text-align: center;font-size: 12px;}
+
+
+.numBox{background:rgba(255,255,255,.9);border-radius: 10px;padding: 10px;position: relative;z-index: 1;}
+.numBox h3{border-bottom: 1px dashed #c4b9b9;padding-bottom: 10px;padding-top: 5px;}
+.numBox h3:before{content: "";width: 24px;height: 24px;background: url(../img/clock.svg) no-repeat center;background-size: auto 100%;margin-right: 5px;}
+.numBox ul li{text-align: center;padding: 10px 0;}
+.numBox ul li h5{color: #e74765;margin-top: 8px;height: 20px;overflow: hidden;}
+
+.topbtn{padding: 6% 5%;overflow: hidden;}
+.topbtn button{color: #86285a;width: 120px;height: 30px;line-height:30px;letter-spacing: 2px;font-size: 16px;}
+.topbtn button:nth-of-type(1){float: left;}
+.topbtn button:nth-of-type(2){float: right;}
+.topbtn button.sbkk{background:url(../img/sbkkBg.png) no-repeat center;background-size:100% 100%;}
+.topbtn button.rqph{background:url(../img/rqphBg.png) no-repeat center;background-size:100% 100%;}
+
+/**************************   涣美投票   投票列表   *****************************/
+.voteList{ margin:0 ; position: relative; }
+.voteBox{ width: 45%; float: left; border: 4px solid rgba(255,255,255,.2);}
+/*.voteBox:nth-child(2n){ clear: left;}*/
+.voteBox dl{ width: 100%; background: #fff;border: 1px solid #bd9ea4;padding: 5px; display: inline-table;}
+.voteBox dl dt{position: relative;width: 100%;}
+.voteBox dl dt img{width: 100%;}
+.voteBox dl dt span.videoIcon{background:rgba(234,124,124,.9) url(../img/video.png) no-repeat center;background-size: 60%;top: 5px;z-index: 2;width: 26px;height: 26px;border-radius: 50%;position: absolute;right: 3px;}
+.voteBox dl dt span.picIcon{background:rgba(248,86,173,.9) url(../img/pic.png) no-repeat center;background-size: 60%;top: 36px;width: 26px;height: 26px;border-radius: 50%;position: absolute;right: 3px;}
+.voteBox dl dt h3{width: 100%;background: rgba(255,238,241,.6);color: #055555;position: absolute;left: 0;bottom: 3px;z-index: 2;text-align: center;height: 30px;line-height: 32px;overflow: hidden;}
+.voteBox dl dd{padding: 10px 0;}
+.voteBox dl dd .votebtn{background: #f856ad;color: #fff;padding: 4px 8px;border-radius: 5px;}
+.voteBox dl dd .voteYes{background: #cfbcc6;}
+.voteBox dl dd .votebtn:before{content: "";width: 16px;height: 16px;background: url(../img/loveIcon.png) no-repeat center;background-size: 100%;margin-top: -3px;margin-right: 3px;}
+.voteBox dl dd label{color: #f856ad;float: right;line-height: 30px;}
+
+/*********  服务详情      公共右弹层   *********/
+.rightpopBg{width: 100%;height: 100%;position:fixed;z-index: 5;background: rgba(0,0,0,.6); top: 0px;left: 0px;}
+.rightPop{width: 85%;height: 100%;position: fixed;z-index: 6;top: 0;right:-100%;background: #fff;}
+
+.rightPop .srchTop{background: #ff5474;color: #fff;padding: 20px;}
+.rightPop .srchTop h3{text-align: center;font-size: 16px;margin-bottom: 15px;}
+.rightPop .srchTop p{font-size: 12px;}
+.rightPop .searchBar{margin-bottom: 10px;}
+.rightPop .searchBar input{width: 74%;padding:6px 10px;border-radius: 5px;font-size: 16px;display: inline-block;margin-right: 10px;}
+.rightPop .searchBar .searchIcon{width: 44px;height: 34px;background: #fff url(../img/searchIcon.svg) no-repeat center;background-size: 50%;border-radius: 5px;float: right;}
+
+.rightPop .srchList{padding: 15px 0;}
+.rightPop .srchList li{margin-bottom: 15px;}
+
+.rightPop .mui-content{width: 90%;margin: 0 5%;}
+
+/*********  视频     弹层   *********/
+.videoPop{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 6;background: rgba(0,0,0,.8);padding:5%;}
+.videoPop .closeVideo{width: 26px;height: 26px;background: url(../img/cha.svg) no-repeat center;background-size: 80%;position: absolute;top: 10%;right: 5%;z-index: 7;}
+.videoPop video{margin-top: 20%;}
+.videoPop h3{color: #fff;text-align: center;margin-top: 15%;}
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.deadline button{width: 170px;height: 34px;line-height: 34px;font-size: 16px;}
+	.numBox h3{font-size: 16px;padding-top: 8px;padding-bottom: 12px;}
+	.numBox h3:before{margin-top: -6px;}
+	.numBox ul li{font-size: 16px;padding-top: 15px;}
+	.acRule{font-size: 16px;}
+	.acRule:before{width: 22px;height: 22px;margin-top: -4px;margin-right: 4px;}
+	.topbtn{padding: 7% 3% 4% 3%;}
+	.topbtn button{width: 140px;height: 34px;line-height:34px;font-weight: bold;}
+	.centerPop .actRule>h4{height: 50px;line-height: 56px;top: -40px;}
+	.rightPop .srchTop h3{font-size: 18px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+	.topbtn button{width: 150px;height: 35px;line-height:35px;}
+}	
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.topbtn{padding: 8% 2% 4% 2%;}
+	.topbtn button{height: 38px;line-height:36px;font-size: 17px;}
+	.topbtn button{width: 168px;height: 38px;line-height:38px;}
+}
+/*iPad*/
+@media screen and (min-width:768px){
+	.topbtn button{width: 300px;height: 54px;line-height:54px;font-size: 26px;}
+	.videoPop video{margin-top: 10%;}
+	.videoPop h3{color: #fff;text-align: center;margin-top: 5%;}
+	.acRule{font-size: 26px;top: 20px;right: 20px;}
+	.acRule:before{width: 30px;height: 30px;margin-top: -8px;margin-right: 10px;}
+	.centerPop .actRule>h4{height: 80px;line-height: 86px;top: -70px;font-size: 26px;}
+	.centerPop .actRule p{font-size: 20px;margin-bottom: 20px;}
+	.deadline button{width: 270px;height: 64px;line-height: 64px;font-size: 26px;}
+	.voteTimeing{margin-top: 30px;}
+	.voteTimeing span i{font-size: 26px; padding:0 20px; min-width: 60px; height: 40px;line-height: 40px;}
+	.voteTimeing span b{width: 32px;height: 32px;line-height: 32px;margin-left: 3px;margin-right: 6px;top: -12px;font-size: 16px;}
+	.numBox{padding: 20px;}
+	.numBox h3{font-size: 22px;padding-top: 12px;padding-bottom: 16px;}
+	.numBox ul li{font-size: 20px;padding-top: 20px;}
+	.voteBox dl dt span{width: 40px;height:40px;}
+	.voteBox dl dt span.videoIcon{top:10px;}
+	.voteBox dl dt span.picIcon{top: 60px;}
+	.voteBox dl dt h3{height: 40px;line-height: 42px;font-size: 18px;}
+	.voteBox dl dd{padding: 20px 0;}
+	.voteBox dl dd .votebtn{padding: 8px 12px;font-size: 20px;}
+	.voteBox dl dd label{font-size: 20px;line-height: 46px;}
+	.rightPop .srchTop h3{font-size: 24px;}
+	.rightPop .searchBar input{padding: 10px 14px;font-size: 18px;}
+	.rightPop .searchBar .searchIcon{width: 64px;height: 44px;}
+	.rightPop .srchTop p{font-size: 16px;}
+	.rightPop .srchList{padding: 30px 0;}
+	.rightPop .srchList li{font-size: 20px;margin-bottom: 20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

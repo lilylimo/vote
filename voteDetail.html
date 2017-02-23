@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>投票详情</title>
+    <link rel="stylesheet" href="css/lightGallery.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/voteDetail.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/lightGallery.js" ></script>
+</head>
+<body>
+<!--  投票详情    主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY">
+	<div class="mui-scroll" >
+		<!--  投票详情    头像    -->
+		<div class="vdImg">
+			<img class="vdImgBg" src="img/user1.jpg" />
+			<img class="vdPerson" src="img/user1.jpg" />
+			<h2>小蕾蕾</h2>
+			<h3>福州大学</h3>
+		</div>		
+		<!--  投票详情    介绍    -->
+		<div class="vdInfo">
+			<h3><b>1号</b>小蕾蕾的宣言</h3>
+			<p>今天的麦苗是鲜绿的，明天就会变成金黄；今天的玫瑰是含苞的，明天就会娇艳绽放；今天的年轻积福被赋予倩碧“宛若新生”，明天就会发光发亮。所有的年轻都存在于今天，每个细节都有深情，那么就让今天年轻的自己，已嘴馋懒得姿态迎接明天的光亮吧！</p>
+			<div class="vdBar">
+				<span class="voteYesBtn">投票</span>
+				<label>11票</label>
+				<a href="">我也报个名</a>
+			</div>
+			
+		</div>
+		<!--  投票详情    图片轮播    -->
+		<div class="imgSlide">
+			<div class="mui-scroll-wrapper mui-slider-indicator scrollX">
+				<cite class="mui-scroll displayBox" id="auto-loop" data-title = "5号-李美丽" data-slogan="做真实的自我,用时尚与魅力演绎完美的瞬间。">
+					<div class="imgSlideBox boxflex" data-src="img/user2.jpg" >
+						<img src="img/user2.jpg"/>
+						<span class="scaleIcon"></span>
+			    	</div>
+			    	<div class="imgSlideBox boxflex" data-src="img/user1.jpg" >
+						<img src="img/user1.jpg" />
+						<span class="scaleIcon"></span>
+			    	</div>
+			    	<div class="imgSlideBox boxflex" data-src="img/user2.jpg" >
+						<img src="img/user2.jpg" />
+						<span class="scaleIcon"></span>
+			    	</div>
+	    		</cite>
+			</div>
+			
+			
+		</div>
+		<!--  投票详情    视频    -->
+		<div class="vdVideo">
+			<div class="videoBox">
+				<button class="playVideo"></button>
+				<div class="videoBar">
+					<video id="playVideo">
+						<source src="http://lili.17imei.com/video/mov.mp4" type="video/mp4">
+    					<!--<source src="http://lili.17imei.com/video/movie.ogg" type="video/ogg">-->
+    					<!--<source src="http://lili.17imei.com/video/test2.webm" type="video/webm">-->
+					</video>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+	</div>	
+</section>
+
+<!--  弹层   投票提示    -->
+<div id="voteTip" class="centerPop voteTipPop">
+	<div class="voteTip">
+		<h3>您已成功投票</h3>
+	    <p class="displayBox">
+	    	<span class="boxflex">再看看</span>
+	    	<a class="boxflex" href="">去抽奖</a>
+	    </p>
+	</div>
+</div>
+	
+	
+
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/voteDetail.js" ></script>
+
+	
+</body>
+</html>

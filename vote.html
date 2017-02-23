@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>涣美-投票</title>
+    <link rel="stylesheet" href="css/lightGallery.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vote.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/lightGallery.js" ></script>
+</head>
+<body>
+<!--  涣美投票    主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY scrollBt50 voteMain">
+	<div class="mui-scroll" id="voteBase">
+		
+			<!--  涣美投票    头部    -->
+			<div class="vTopBox">
+				<img class="topBg" src="img/vTopBg.jpg">
+				<span id="openTip" class="acRule">活动规则</span>
+				<div class="deadline">
+					<button>距离投票截至时间</button>
+					<!-- 投票倒计时  开始-->
+		    		<div class="voteTimeing "><span class="settime"></span></div>
+				</div>
+				<div class="numBox">
+					<h3>2017-03-01 至 2017-06-01</h3>
+					<ul class="displayBox">
+						<li class="boxflex">
+							<h4>参与选手</h4>
+							<h5>55</h5>
+						</li>
+						<li class="boxflex">
+							<h4>累计投票</h4>
+							<h5>5555</h5>
+						</li>
+						<li class="boxflex">
+							<h4>访问量</h4>
+							<h5>9999</h5>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="topbtn">
+					<button class="sbkk">随便看看</button>
+					<button class="rqph">人气排行</button>
+				</div>
+				
+			</div>
+			
+			<!--  涣美投票    投票列表    -->
+			<div class="voteList">
+				<div class="voteBox"><dl><dt><img class="img" src="img/user1.jpg"><span class="videoIcon"></span><cite data-title = "1号-李美丽" data-slogan="做真实的自我,用时尚与魅力演绎完美的瞬间。"><span class="picIcon" data-src="img/user1.jpg"></span><span data-src="img/user1.jpg"></span></cite><h3>1号 卜蕾蕾</h3></dt><dd><span class="votebtn">投票</span><label>11票</label></dd></dl></div>
+				<div class="voteBox"><dl><dt><img class="img" src="img/user1.jpg"><span class="videoIcon"></span><cite data-title = "1号-李美丽" data-slogan="做真实的自我,用时尚与魅力演绎完美的瞬间。"><span class="picIcon" data-src="img/user1.jpg"></span><span data-src="img/user1.jpg"></span></cite><h3>1号 卜蕾蕾</h3></dt><dd><span class="votebtn">投票</span><label>11票</label></dd></dl></div>
+				<div class="voteBox"><dl><dt><img class="img" src="img/user1.jpg"><span class="videoIcon"></span><cite data-title = "1号-李美丽" data-slogan="做真实的自我,用时尚与魅力演绎完美的瞬间。"><span class="picIcon" data-src="img/user1.jpg"></span><span data-src="img/user1.jpg"></span></cite><h3>1号 卜蕾蕾</h3></dt><dd><span class="votebtn">投票</span><label>11票</label></dd></dl></div>
+				<div class="voteBox"><dl><dt><img class="img" src="img/user1.jpg"><span class="videoIcon"></span><cite data-title = "1号-李美丽" data-slogan="做真实的自我,用时尚与魅力演绎完美的瞬间。"><span class="picIcon" data-src="img/user1.jpg"></span><span data-src="img/user1.jpg"></span></cite><h3>1号 卜蕾蕾</h3></dt><dd><span class="votebtn">投票</span><label>11票</label></dd></dl></div>
+				
+				
+			</div>
+			<!-- 上拉加载提示    开始-->
+			<div class="loadmore"><span class="loading"></span></div>
+			 <!-- 上拉加载提示     结束-->
+			
+			
+
+		
+		
+	</div>		
+</section>	
+	
+<!--  公共底部导航    -->
+<footer class="voteFoot">
+	<a href="" class="wgw">微官网</a>
+	<a class="kfdh callTel" data-tel="tel:18818888888">客服电话</a>
+	<a id="openSearch" href="javascript:;" class="ss">搜嗖</a>
+	<a href="" class="dzp">大转盘</a>
+</footer>
+
+<!--  公共弹层背景    -->
+<div class="popBg hide"></div>
+
+<!--  弹层   投票提示    -->
+<div id="voteTip" class="centerPop voteTipPop">
+	<div class="voteTip">
+		<h3>您已成功投票</h3>
+	    <p class="displayBox">
+	    	<span class="boxflex">再看看</span>
+	    	<a class="boxflex" href="">去抽奖</a>
+	    </p>
+	</div>
+</div>
+
+<!--  弹层   活动规则    -->
+<div id="acRule" class="centerPop">
+	<div class="actRule">
+		<h4>活动规则</h4>
+	    <div class="mui-content mui-scroll-wrapper scrollY scrollBt20 scrollTp20">
+	        <div class="mui-scroll">
+	            <div class="test">
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次每</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2</p>
+					<p>提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次每</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2</p>
+					<p>提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+					<p>每自然月可提现2次每自然月可提现2次</p>
+	            </div>
+	        </div>
+	    </div>
+	    
+	</div>
+</div>
+
+<!--  弹层   搜索列表    -->
+<div id="searchPop" class="rightPop">
+	<div class="searchBox">
+		<div class="srchTop">
+			<h3>选手大搜捕令</h3>
+			<div class="searchBar">
+				<input type="text" placeholder="请输入编号、姓名" />
+				<span class="searchIcon"></span>
+			</div>
+			<p>我会告诉您，在搜索成功后的页面，更多精彩等着您么~</p>
+		</div>
+		<div class="mui-content mui-scroll-wrapper scrollY scrollTp150 scrollBt20">
+			<div class="mui-scroll">
+				<ul class="srchList">
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+					<li>
+						<label>36号 </label>
+						<span>张靓颖</span>
+					</li>
+				</ul>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--  公共右弹层    -->
+<div class="rightpopBg hide"></div>
+
+<!--  弹层    视频    -->
+<div class="videoPop hide">
+	<span class="closeVideo"></span>
+	<h3>1号 - 小蕾蕾</h3>
+	<button class="playVideo"></button>
+	<video id="playVideo" src="http://lili.17imei.com/video/mov.mp4" width="100%">
+		您的浏览器不支持 video 标签。
+	</video>
+</div>
+
+	
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/jquery.waterfall.js" ></script>
+<script type="text/javascript" src="js/vote.js" ></script>
+
+
+	
+</body>
+</html>
